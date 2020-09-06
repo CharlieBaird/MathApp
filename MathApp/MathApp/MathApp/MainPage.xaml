@@ -5,10 +5,14 @@
              x:Class="MathApp.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Label
+            Text="Math Stuffs"
+            />
+        <ScrollView>
+            <StackLayout x:Name="StackLayout" Spacing="20">
+                
+            </StackLayout>
+        </ScrollView>
     </StackLayout>
 
 </ContentPage>
