@@ -14,7 +14,6 @@
         <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
         <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
         <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-        <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
         <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
         <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     </PropertyGroup>
@@ -72,7 +71,7 @@
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\MathApp\MathApp.csproj">
-            <Project>{4FD55417-A721-4BBB-928B-2393EE235B3C}</Project>
+            <Project>{98180E41-FD73-4F3D-B18B-B57818A7AD74}</Project>
             <Name>MathApp</Name>
         </ProjectReference>
     </ItemGroup>
