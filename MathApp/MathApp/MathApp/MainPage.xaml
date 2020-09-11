@@ -5,14 +5,29 @@
              x:Class="MathApp.MainPage">
 
     <StackLayout>
+        
+        <BoxView
+            HeightRequest="50"
+            BackgroundColor="Transparent"
+            />
+        
         <Label
             Text="Math Stuffs"
+            HorizontalOptions="Center"
             />
         <ScrollView>
             <StackLayout x:Name="StackLayout" Spacing="20">
                 
             </StackLayout>
         </ScrollView>
+        
+        <Button
+            WidthRequest="100"
+            HeightRequest="50"
+            Text="Query"
+            Clicked="Button_OnClicked"
+            />
+        
     </StackLayout>
 
 </ContentPage>
