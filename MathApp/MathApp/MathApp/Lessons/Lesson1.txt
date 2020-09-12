@@ -1,0 +1,33 @@
+Before exploring more intricate ideas of Number Theory, we need to know a few key ideas, namely the \textit{ring axioms}. We all know addition and multiplication as binary operators, but some may not know their involvement in Rings. \\
+
+\textbf{Definition 1.1}: Traditionally, a \textit{ring} is a structure $\langle R, +, \cdot\rangle$ which satisfies\\
+\textbullet \textit{Commutativity} :$a+b=b+a$ and $ab=ba$\\
+\textbullet \textit{Associativity} :$(a+b)+c=a+(b+c)$ and $(ab)c=a(bc)$\\
+\textbullet \textit{Distributivity} :$(a+b)\cdot c=(a\cdot c)+(b\cdot c)$\\
+\textbullet \textit{Identity property of multiplication} :$\exists e\in R\ni a\cdot e =a$. Note that $e$ denotes the identity element.\\
+\textbullet \textit{Identity property of addition} :$\exists e\in R\ni a+e=a$\\
+\textbullet \textit{Additive inverse} :$\forall a\in R\exists x\in R\ni a+x=0$\\
+Before moving forward, is $\mathbb{Z}$, the integers, a ring?\\
+\\
+In Number Theory, most conversations will revolve around $\mathbb{Z}$ so the next few ideas apply to $\mathbb{Z}$ and not all rings necessarily.\\
+
+So we know that $\mathbb{Z}$ has a specific order. For instance, we always say $0,1,2,3,4,5,...n$ as counting numbers and we say that $0<1<2<3<4<5<...<n$, but what does it mean to be less than another number? Why are the number ordered this way and not $2,4,3,1,n,5,...$?\\
+
+To answer the first question, to be less than another number, we have $a<b$ for some $a,b\in\mathbb{Z}$. Well this must mean that there exists some positive integer $p$ such that $a+p=b$.  Well you might notice that these ideas don't come from the Ring Axioms alone, so where do they come from? They come from axioms known as the \textit{order axioms}.\\
+
+\textbf{Definition 1.2}: Let $\mathbb{Z}^+$ be the set of positive integers.
+The order axioms state that $P$ must satisfy\\
+\textbullet Additive Closure:$\forall a,b\in \mathbb{Z}^+, a+b\in \mathbb{Z}^+$\\
+\textbullet \textit{Multiplicative Closure} :$\forall a,b\in \mathbb{Z}^+, ab\in \mathbb{Z}^+$\\
+\textbullet $0\notin \mathbb{Z}^+$ meaning $0$ is not positive.\\
+\textbullet \textit{Trichotomy}: $\forall a\in \mathbb{Z}^+$, one of the following must be true: $a\in \mathbb{Z}^+,a=0,-a\in \mathbb{Z}^+$\\
+
+The next idea is extremely important for number theory and is crucial to our understanding of future ideas. \\
+
+\textbf{Definition 1.3}: The \textit{Well Ordering Principle} or WOP stats that every nonempty subset $S\subseteq \mathbb{Z}^+$ has a minimal element $m$ such that $\forall x\in S, m\leq x$. \\
+
+But what does $\leq$ really mean? Sure we know that it means less than or equal to, but what does in mean in an expression? That sounds like something for you to define(Hint: Use a similar approach to $<$).\\
+
+\textbf{Definition 1.4}: The \textit{Principle of Induction} states that if $P(1)$ holds then $P(k)\Rightarrow P(k+1)$\\
+
+This is a common proof technique. Proofs involving induction should start with proving the \textit{base case} meaning proving the idea holds for $n=1$. Then the next part, called the \textit{induction hypothesis}, means you should say: assume this idea hold for all $n$, then for $n+1$... Note that proving the idea for $n+1$ is called the \textit{iterative case} and you should use the induction hypothesis to prove this.
