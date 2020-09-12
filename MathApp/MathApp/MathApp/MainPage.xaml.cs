@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using CSharpMath.Forms;
 using MathApp.Util;
@@ -29,12 +26,12 @@ namespace MathApp
             var response = await Query.QueryLessonsAsync();
 
             if (response == null) return;
-            
-            string s = response.classes[0].calculus[0].limits[0].question;
+
+            var lessonsData = LessonsData.FromJson(response);
             
             StackLayout.Children.Add(new MathView
             {
-                LaTeX = s,
+                LaTeX = lessonsData.Lessons[0].Questions[0].Text,
                 HorizontalOptions = LayoutOptions.CenterAndExpand,
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 BackgroundColor = Color.Beige

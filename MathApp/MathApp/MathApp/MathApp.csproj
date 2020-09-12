@@ -17,4 +17,17 @@
         <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.5" />
         <PackageReference Include="Xamarin.Forms" Version="4.7.0.1080" />
     </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Pages\LessonPage.xaml">
+        <SubType>Designer</SubType>
+        <Generator></Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Pages\LessonPage.xaml.cs">
+        <DependentUpon>LessonPage.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
 </Project>

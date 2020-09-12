@@ -16,7 +16,8 @@ namespace MathApp.Util
             
             try
             {
-                var url = new Uri("https://mathquestioneditor.herokuapp.com/");
+                // var url = new Uri("https://mathquestioneditor.herokuapp.com/");
+                var url = new Uri("http://172.16.42.18:80");
                 response = await Client.GetStringAsync(url);
             }
             catch (HttpRequestException ex)
@@ -28,16 +29,11 @@ namespace MathApp.Util
             return response;
         }
 
-        public static async Task<dynamic> QueryLessonsAsync()
+        public static async Task<string> QueryLessonsAsync()
         {
             var response = await QueryApiLessonsAsync();
 
-            if (response == null)
-                return null;
-
-            dynamic responseObject = JObject.Parse(response);
-
-            return responseObject;
+            return response;
         }
     }
 }
